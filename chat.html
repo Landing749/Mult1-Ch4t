@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mult1-Ch4t</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="firebase.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Mult1-Ch4t</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <div id="sidebar">
+    <button id="toggleSidebar">☰ Rooms</button>
+    <div id="roomList"></div>
+    <input type="text" id="newRoomName" placeholder="New Room Name">
+    <button id="createRoomBtn">Create Room</button>
+  </div>
+
+  <main>
+    <h2 id="roomTitle">Select a room</h2>
+    <div id="messages"></div>
+    <div id="messageBox">
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </main>
+</body>
+</html>
