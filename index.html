@@ -3,33 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mult1-Ch4t - Login</title>
+  <title>Mult1-Ch4t Room | Login</title>
   <link rel="stylesheet" href="style.css">
-  <script type="module" src="firebase.js"></script>
 </head>
 <body>
+
+  <header>
+    <h2>🔐 Mult1-Ch4t Room</h2>
+  </header>
+
   <div class="auth-container">
-    <h1>Welcome to Mult1-Ch4t</h1>
+    <h3>Login</h3>
+    <input type="email" id="login-email" placeholder="Email">
+    <input type="password" id="login-password" placeholder="Password">
+    <button id="login-btn">Login</button>
 
-    <div id="authBox">
-      <!-- Login Form -->
-      <div id="loginBox">
-        <h2>Login</h2>
-        <input type="email" id="loginEmail" placeholder="Email">
-        <input type="password" id="loginPassword" placeholder="Password">
-        <button id="loginBtn">Login</button>
-        <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
-      </div>
-
-      <!-- Signup Form -->
-      <div id="signupBox" style="display:none;">
-        <h2>Sign Up</h2>
-        <input type="email" id="signupEmail" placeholder="Email">
-        <input type="password" id="signupPassword" placeholder="Password">
-        <button id="signupBtn">Sign Up</button>
-        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
-      </div>
-    </div>
+    <h3>or Signup</h3>
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button id="signup-btn">Signup</button>
   </div>
+
+  <!-- JS -->
+  <script type="module" src="index.js"></script>
 </body>
 </html>
