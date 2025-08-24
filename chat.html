@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mult1-Ch4t Room</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
+  <header class="chat-header">
+    <button id="menuBtn" aria-label="Toggle chats">☰</button>
     <h2>💬 Mult1-Ch4t Room</h2>
+    <button id="logout-btn" class="danger">Logout</button>
   </header>
 
-  <div id="messages"></div>
+  <!-- Sliding Sidebar -->
+  <aside id="sidebar">
+    <div class="sidebar-head">
+      <h3>Your Chats</h3>
+      <button id="newDmBtn">+ New DM</button>
+      <button id="newGroupBtn">+ New Group</button>
+    </div>
+    <ul id="chatList"></ul>
+  </aside>
 
-  <div id="input-area">
-    <input type="text" id="message-input" placeholder="Type your message..." />
-    <button id="send-btn">Send</button>
-    <button id="logout-btn">Logout</button>
-  </div>
+  <!-- Main chat area -->
+  <main id="chatMain">
+    <div id="chatMeta">
+      <h3 id="chatTitle">Select or create a chat</h3>
+      <button id="addPeopleBtn" style="display:none;">+ Add people</button>
+    </div>
 
-  <!-- JS -->
+    <div id="messages"></div>
+
+    <div id="input-area">
+      <input type="text" id="message-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </main>
+
   <script type="module" src="chat.js"></script>
 </body>
 </html>
